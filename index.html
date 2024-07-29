@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts Plugins</title>
+    <!-- Use a pre built script for the alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <button id="alertButton">Click Here To Test!</button>
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function () {
+            swal({
+                title: "Good Morning",
+                text: "You just clicked on the button",
+                icon: "success",
+                button: "Close"
+            })
+        })
+    </script>
+
+</body>
+
+</html>
